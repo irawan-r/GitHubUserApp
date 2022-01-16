@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        buildConfigField("String", "GIHUB_TOKEN", '"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"')
+        buildConfigField("String", "GITHUB_TOKEN", '"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"')
 
         applicationId "com.roy.githubuser"
         minSdk 21
@@ -35,7 +35,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '11'
     }
     dynamicFeatures = []
 }
