@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             this,
         )[MainViewModel::class.java]
 
-        mainViewModel.getUserName().observe(this, {
+        mainViewModel.getUserName().observe(this) {
             if (it != null) {
                 adapter.setList(it)
                 showLoading(false)
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
                     this, "Please Input Username!", Toast.LENGTH_LONG).show()
                 showLoading(false)
             }
-        })
+        }
     }
 
     private fun showRecyclerList() {
@@ -121,19 +121,19 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        settingViewModel.getThemeSettings().observe(this,
-            { isDarkModeActive: Boolean ->
-                if (isDarkModeActive) {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                    switchTheme.isChecked = true
-                } else {
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                    switchTheme.isChecked = false
-                }
-                switchTheme.setOnCheckedChangeListener { _: CompoundButton, isChecked: Boolean ->
-                    settingViewModel.saveThemeSetting(isChecked)
-                }
-            })
+        settingViewModel.getThemeSettings().observe(this
+        ) { isDarkModeActive: Boolean ->
+            if (isDarkModeActive) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                switchTheme.isChecked = true
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                switchTheme.isChecked = false
+            }
+            switchTheme.setOnCheckedChangeListener { _: CompoundButton, isChecked: Boolean ->
+                settingViewModel.saveThemeSetting(isChecked)
+            }
+        }
 
         return super.onCreateOptionsMenu(menu)
     }
