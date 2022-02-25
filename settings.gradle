@@ -3,7 +3,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        gradlePluginPortal()
+        jcenter()
     }
 }
 rootProject.name = "GitHubUser"

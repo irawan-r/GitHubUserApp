@@ -1,7 +1,7 @@
 <resources>
 
     <!--Common-->
-    <string name="app_name">GitHubUserApi</string>
+    <string name="app_name">GitHubUser</string>
     <string name="rv_avatar">rv_avatar</string>
     <string name="detailed_avatar">detailed_avatar</string>
     <string name="splashScreen">splash_screen</string>
