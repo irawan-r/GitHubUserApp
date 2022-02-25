@@ -1,4 +1,4 @@
-package com.roy.githubuser.db.local
+package com.roy.githubuser.db.model
 
 import android.os.Parcelable
 import androidx.room.Entity

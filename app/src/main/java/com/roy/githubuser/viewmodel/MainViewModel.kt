@@ -1,13 +1,12 @@
 package com.roy.githubuser.viewmodel
 
 import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.roy.githubuser.api.ApiConfig
-import com.roy.githubuser.dataclass.User
-import com.roy.githubuser.dataclass.UserResponse
+import com.roy.githubuser.api.User
+import com.roy.githubuser.api.UserResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

@@ -14,7 +14,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.roy.githubuser.R
 import com.roy.githubuser.adapter.SectionPagerAdapter
 import com.roy.githubuser.databinding.ActivityDetailUserBinding
-import com.roy.githubuser.dataclass.User
+import com.roy.githubuser.api.User
 import com.roy.githubuser.viewmodel.DetailUserViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

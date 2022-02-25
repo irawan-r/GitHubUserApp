@@ -2,15 +2,14 @@ package com.roy.githubuser.viewmodel
 
 import android.app.Application
 import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.roy.githubuser.api.ApiConfig
-import com.roy.githubuser.dataclass.DetailUserResponse
-import com.roy.githubuser.db.local.FavoriteUser
-import com.roy.githubuser.db.local.FavoriteUserDao
-import com.roy.githubuser.db.local.UserDatabase
+import com.roy.githubuser.api.DetailUserResponse
+import com.roy.githubuser.db.model.FavoriteUser
+import com.roy.githubuser.db.model.FavoriteUserDao
+import com.roy.githubuser.db.model.UserDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

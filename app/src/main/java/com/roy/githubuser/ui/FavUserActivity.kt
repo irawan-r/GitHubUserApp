@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.roy.githubuser.R
 import com.roy.githubuser.adapter.UserAdapter
 import com.roy.githubuser.databinding.ActivityFavUserBinding
-import com.roy.githubuser.dataclass.User
-import com.roy.githubuser.db.local.FavoriteUser
+import com.roy.githubuser.api.User
+import com.roy.githubuser.db.model.FavoriteUser
 import com.roy.githubuser.viewmodel.FavUserViewModel
 
 class FavUserActivity : AppCompatActivity() {

@@ -13,7 +13,7 @@ import com.roy.githubuser.adapter.FollowersAdapter
 import com.roy.githubuser.adapter.FollowingAdapter
 import com.roy.githubuser.adapter.UserAdapter
 import com.roy.githubuser.databinding.FragmentFollowsBinding
-import com.roy.githubuser.dataclass.User
+import com.roy.githubuser.api.User
 import com.roy.githubuser.viewmodel.FollowersViewModel
 import com.roy.githubuser.viewmodel.FollowingViewModel
 

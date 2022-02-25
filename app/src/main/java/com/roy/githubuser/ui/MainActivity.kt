@@ -24,12 +24,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.roy.githubuser.R
 import com.roy.githubuser.adapter.UserAdapter
 import com.roy.githubuser.databinding.ActivityMainBinding
-import com.roy.githubuser.dataclass.User
+import com.roy.githubuser.api.User
 import com.roy.githubuser.settings.SettingPreferences
 import com.roy.githubuser.viewmodel.MainViewModel
 import com.roy.githubuser.viewmodel.SettingViewModel
 import com.roy.githubuser.viewmodel.ViewModelFactory
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
 

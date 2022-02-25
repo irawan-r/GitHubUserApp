@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.roy.githubuser.databinding.ItemRowUserBinding
-import com.roy.githubuser.dataclass.User
+import com.roy.githubuser.api.User
 
 class FollowingAdapter : RecyclerView.Adapter<FollowingAdapter.FollowingViewHolder>() {
     private lateinit var onItemCallback: UserAdapter.OnItemCallback

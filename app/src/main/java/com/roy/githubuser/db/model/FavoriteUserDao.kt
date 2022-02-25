@@ -1,7 +1,6 @@
-package com.roy.githubuser.db.local
+package com.roy.githubuser.db.model
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query

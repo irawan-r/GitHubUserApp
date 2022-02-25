@@ -1,4 +1,4 @@
-package com.roy.githubuser.dataclass
+package com.roy.githubuser.api
 
 data class UserResponse(
 

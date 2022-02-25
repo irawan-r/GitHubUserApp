@@ -1,4 +1,4 @@
-package com.roy.githubuser.dataclass
+package com.roy.githubuser.api
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

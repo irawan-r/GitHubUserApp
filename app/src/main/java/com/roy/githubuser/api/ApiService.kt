@@ -1,8 +1,5 @@
 package com.roy.githubuser.api
 
-import com.roy.githubuser.dataclass.DetailUserResponse
-import com.roy.githubuser.dataclass.User
-import com.roy.githubuser.dataclass.UserResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Headers
