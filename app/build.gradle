@@ -14,7 +14,7 @@ android {
     }
 
     defaultConfig {
-        buildConfigField("String", "GITHUB_TOKEN", '"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"')
+        buildConfigField("String", "GITHUB_TOKEN", '"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"')
 
         applicationId "com.roy.githubuser"
         minSdk 21
