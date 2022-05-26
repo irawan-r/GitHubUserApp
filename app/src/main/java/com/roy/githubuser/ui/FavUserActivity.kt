@@ -34,14 +34,14 @@ class FavUserActivity : AppCompatActivity() {
     private fun faViewModel() {
         adapter.notifyDataSetChanged()
         viewModel = ViewModelProvider(this)[FavUserViewModel::class.java]
-        viewModel.getFavoriteUser().observe(this, {
+        viewModel.getFavoriteUser().observe(this) {
             if (it != null) {
                 val list = mapList(it)
                 adapter.setList(list)
             } else {
                 binding.logEmptyFav.visibility = View.VISIBLE
             }
-        })
+        }
     }
 
     private fun mapList(users: List<FavoriteUser>): ArrayList<User> {

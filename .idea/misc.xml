@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Roy/AndroidStudioProjects/GitHubUser-final/app/src/main/res/drawable/ic_favorite_borderline.xml" value="0.201" />
+        <entry key="..\:/Users/Roy/AndroidStudioProjects/GitHubUser-final/app/src/main/res/layout/activity_detail_user.xml" value="0.5" />
         <entry key="..\:/Users/Roy/AndroidStudioProjects/GitHubUser-final/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Roy/AndroidStudioProjects/GitHubUser-final/app/src/main/res/layout/activity_splash_screen.xml" value="0.17708333333333334" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android Studio java home" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio java home" project-jdk-type="JavaSDK" />
 </project>

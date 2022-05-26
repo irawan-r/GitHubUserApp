@@ -54,7 +54,7 @@ class DetailUserActivity : AppCompatActivity() {
             this
         )[DetailUserViewModel::class.java]
         viewModel.setUserDetail(user?.login)
-        viewModel.getUserDetail().observe(this, {
+        viewModel.getUserDetail().observe(this) {
             if (it != null) {
                 Glide.with(this@DetailUserActivity)
                     .load(it.avatar_url)
@@ -72,7 +72,7 @@ class DetailUserActivity : AppCompatActivity() {
                 }
             }
             showLoading(false)
-        })
+        }
 
 
         CoroutineScope(Dispatchers.IO).launch {

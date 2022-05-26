@@ -70,12 +70,12 @@ class FollowsFragment : Fragment() {
                         this, ViewModelProvider.NewInstanceFactory()
                     )[FollowersViewModel::class.java]
                     followersViewModel.setListFollower(username.toString())
-                    followersViewModel.getListFollowers().observe(viewLifecycleOwner, { user ->
+                    followersViewModel.getListFollowers().observe(viewLifecycleOwner) { user ->
                         if (user != null) {
                             followersAdapter.setList(user)
                             showLoading(false)
                         }
-                    })
+                    }
                     followersAdapter.setOnItemClickCallback(object : UserAdapter.OnItemCallback {
                         override fun onItemClicked(data: User) {
                             showSelectedUser(data)
@@ -90,12 +90,12 @@ class FollowsFragment : Fragment() {
                         ViewModelProvider.NewInstanceFactory()
                     )[FollowingViewModel::class.java]
                     followingViewModel.setListFollowing(username.toString())
-                    followingViewModel.getListFollowing().observe(viewLifecycleOwner, { user ->
+                    followingViewModel.getListFollowing().observe(viewLifecycleOwner) { user ->
                         if (user != null) {
                             followingAdapter.setList(user)
                             showLoading(false)
                         }
-                    })
+                    }
                     followingAdapter.setItemClickCallback(object: UserAdapter.OnItemCallback {
                         override fun onItemClicked(data: User) {
                             showSelectedUser(data)
