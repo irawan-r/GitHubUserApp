@@ -18,5 +18,4 @@ All data is taken from [GitHub](https://docs.github.com/en/rest), for documentat
 - [Glide](https://github.com/bumptech/glide) - Loading images.
 
 ## Preview
-preview/animation.gif.mp4
-<img src="preview/animation.gif" align="left"/>
+<img src="/preview/animation.gif" align="left"/>
